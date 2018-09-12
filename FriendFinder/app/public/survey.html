@@ -5,10 +5,182 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Survey</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <title>FriendFinder-Survey</title>
 </head>
+<h1> 🧙‍ answer these q's to find your match!!💘</h1>
+<br>
 
 <body>
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
+        crossorigin='anonymous'></script>
+    <form>
+        <div class="form-row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="First name">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Last name">
+            </div>
+        </div>
+    </form>
+
+    <button id="submit"></button>
+
+    <h1>Survey Q's</h1><br>
+
+    <h5>question 1</h5>
+    <fieldset class="form-group">
+        <label for="question01">I am always up for an adventure</label>
+        <br>
+        <div class="col-md-4">
+            <select class="form-control" id="question01" name="scores[0]">
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+            </select>
+        </div>
+    </fieldset>
+
+    <h5>question 2</h5>
+    <fieldset class="form-group">
+        <label for="question02">I like reading</label>
+        <br>
+        <div class="col-md-4">
+            <select class="form-control" id="question02" name="scores[1]">
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+            </select>
+        </div>
+    </fieldset>
+
+    <h5>question 3</h5>
+    <fieldset class="form-group">
+        <label for="question03">I am good at reading people.</label>
+        <br>
+        <div class="col-md-4">
+            <select class="form-control" id="question03" name="scores[2]">
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+            </select>
+        </div>
+    </fieldset>
+
+    <h5>question 4</h5>
+    <fieldset class="form-group">
+        <label for="question04">I'm a workaholic.</label>
+        <br>
+        <div class="col-md-4">
+            <select class="form-control" id="question04" name="scores[3]">
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+            </select>
+        </div>
+    </fieldset>
+
+    <h5>question 5</h5>
+    <fieldset class="form-group">
+        <label for="question05">I like concerts</label>
+        <br>
+        <div class="col-md-4">
+            <select class="form-control" id="question05" name="scores[4]">
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+            </select>
+        </div>
+    </fieldset>
+
+    <h5>question 6</h5>
+    <fieldset class="form-group">
+        <label for="question06">I like the internet, a lot!</label>
+        <br>
+        <div class="col-md-4">
+            <select class="form-control" id="question06" name="scores[5]">
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+            </select>
+        </div>
+    </fieldset>
+
+    <h5>Question 7</h5>
+    <fieldset class="form-group">
+        <label for="question07">I consider myself "cool".</label>
+        <br>
+        <div class="col-md-4">
+            <select class="form-control" id="question07" name="scores[6]">
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+            </select>
+        </div>
+    </fieldset>
+
+    <h5>question 8</h5>
+    <fieldset class="form-group">
+        <label for="question08">I like being alone sometimes.</label>
+        <br>
+        <div class="col-md-4">
+            <select class="form-control" id="question08" name="scores[7]">
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+            </select>
+        </div>
+    </fieldset>
+
+    <h5>Question 9</h5>
+    <fieldset class="form-group">
+        <label for="question09">I think I'm awesome</label>
+        <br>
+        <div class="col-md-4">
+            <select class="form-control" id="question09" name="scores[8]">
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+            </select>
+        </div>
+    </fieldset>
+
+    <h5>Question 10</h5>
+    <fieldset class="form-group">
+        <label for="question10">I like dogs</label>
+        <br>
+        <div class="col-md-4">
+            <select class="form-control" id="question10" name="scores[9]">
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+            </select>
+        </div>
+    </fieldset>
+
+
 
 </body>
 
